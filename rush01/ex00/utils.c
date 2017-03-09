@@ -6,7 +6,7 @@
 /*   By: ajuhasz <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 16:40:26 by ajuhasz           #+#    #+#             */
-/*   Updated: 2016/09/10 17:35:34 by vcincean         ###   ########.fr       */
+/*   Updated: 2016/09/10 16:44:26 by ajuhasz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ void	ft_print_matrix(int **tab)
 int		ft_check_arguments(int argc, char **argv)
 {
 	int	i;
-	int	j;
 
 	if (argc != 10)
 		return (0);
@@ -57,14 +56,6 @@ int		ft_check_arguments(int argc, char **argv)
 	{
 		if (ft_strlen(argv[i]) != 9)
 			return (0);
-		j = 0;
-		while (j < 9)
-		{
-			if (!(argv[i][j] == '.' ||
-						('0' <= argv[i][j] && argv[i][j] <= '9')))
-				return (0);
-			j++;
-		}
 		i++;
 	}
 	return (1);

@@ -6,7 +6,7 @@
 /*   By: vcincean <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/17 17:50:12 by vcincean          #+#    #+#             */
-/*   Updated: 2016/09/18 13:18:06 by vcincean         ###   ########.fr       */
+/*   Updated: 2016/09/18 16:01:05 by isargu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,8 @@ void	check_and_print_first_solution_if_any(t_colle **vector, char *str,
 		i++;
 	if (i < 5)
 		print_solution(i++, x, y);
+	else
+		i++;
 	if (i < 6)
 		print_the_other_solutions(solutions, i, x, y);
 	else

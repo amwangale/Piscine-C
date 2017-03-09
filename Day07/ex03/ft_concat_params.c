@@ -6,13 +6,11 @@
 /*   By: vcincean <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/07 16:31:27 by vcincean          #+#    #+#             */
-/*   Updated: 2016/09/07 16:56:55 by vcincean         ###   ########.fr       */
+/*   Updated: 2016/09/08 11:13:49 by vcincean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 
 int		ft_strlen(char *str)
 {
@@ -45,9 +43,11 @@ int		ft_my_length(int argc, char **argv)
 
 char	*ft_strcat(char *dest, char *src)
 {
+	char	*ret;
+
+	ret = dest;
 	while (*dest)
 		dest++;
-	dest--;
 	while (*src)
 	{
 		*dest = *src;
@@ -55,7 +55,7 @@ char	*ft_strcat(char *dest, char *src)
 		src++;
 	}
 	*dest = '\0';
-	return (dest);
+	return (ret);
 }
 
 char	*ft_concat_params(int argc, char **argv)
@@ -63,7 +63,6 @@ char	*ft_concat_params(int argc, char **argv)
 	char	*ret;
 	int		i;
 
-	printf("%d\n", ft_my_length(argc, argv));
 	ret = (char*)malloc(sizeof(char) * ft_my_length(argc, argv));
 	i = 1;
 	while (i < argc)
@@ -73,13 +72,4 @@ char	*ft_concat_params(int argc, char **argv)
 		i++;
 	}
 	return (ret);
-}
-
-int		main(int argc, char **argv)
-{
-	char	*ret;
-
-	ret = ft_concat_params(argc, argv);
-	printf("%s\n", ret);
-	return (0);
 }

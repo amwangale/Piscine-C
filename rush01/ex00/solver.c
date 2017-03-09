@@ -6,12 +6,13 @@
 /*   By: ajuhasz <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 15:06:06 by ajuhasz           #+#    #+#             */
-/*   Updated: 2016/09/10 16:37:22 by ajuhasz          ###   ########.fr       */
+/*   Updated: 2016/09/11 17:25:25 by ajuhasz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "solver.h"
 #include "check.h"
+#include <unistd.h>
 
 int		find_next_position(int **tab, int *i, int *j)
 {
@@ -60,6 +61,29 @@ int		ft_solve(int **tab)
 			tab[i][j] = EMPTY;
 		}
 		n++;
+	}
+	return (0);
+}
+
+int		ft_solve_invers(int **tab)
+{
+	int i;
+	int j;
+	int n;
+
+	if (find_next_position(tab, &i, &j) == 0)
+		return (1);
+	n = 9;
+	while (n >= 1)
+	{
+		if (is_consistent(tab, i, j, n) == 1)
+		{
+			tab[i][j] = n;
+			if (ft_solve(tab) == 1)
+				return (1);
+			tab[i][j] = EMPTY;
+		}
+		n--;
 	}
 	return (0);
 }

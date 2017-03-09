@@ -6,7 +6,7 @@
 /*   By: ajuhasz <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 15:28:38 by ajuhasz           #+#    #+#             */
-/*   Updated: 2016/09/10 16:28:42 by ajuhasz          ###   ########.fr       */
+/*   Updated: 2016/09/11 19:38:19 by ajuhasz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,26 @@ int		check_square(int **tab, int i, int j, int n)
 			y++;
 		}
 		x++;
+	}
+	return (1);
+}
+
+int		similar(int **tab, int **tab2)
+{
+	int i;
+	int j;
+
+	i = 0;
+	while (i < 9)
+	{
+		j = 0;
+		while (j < 9)
+		{
+			if (tab[i][j] != tab2[i][j])
+				return (0);
+			j++;
+		}
+		i++;
 	}
 	return (1);
 }
