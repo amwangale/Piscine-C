@@ -1,13 +1,5 @@
-# Piscine-C
-École 42 / Academy+Plus Piscine C: proposed solutions to exercises, projects, rushes and exams for the admission bootcamp
-
-All subjects are available [here](https://github.com/VladCincean/Piscine-C/tree/master/Subjects).
-
-## Best of...
-1. [ft_eight_queens_puzzle](https://github.com/VladCincean/Piscine-C/blob/master/Day04/ex08/ft_eight_queens_puzzle.c)
-2. [brainfuck](https://github.com/VladCincean/Piscine-C/blob/master/ExamFinal/rendu/brainfuck/brainfuck.c) (Success with 0 points)
-3. [cold_shower.sh](https://github.com/VladCincean/Piscine-C/blob/master/Day09/ex20/cold_shower.sh)
-4. [eval-expr](https://github.com/VladCincean/Piscine-C/blob/master/evalexpr/ex00/eval_expr.c) (simple solution using indirect recursion)
+# Piscine C
+Piscine C: proposed solutions to exercises, projects, rushes and exams for the admission bootcamp
 
 ## Regular days
 ##### [Day00](https://github.com/VladCincean/Piscine-C/tree/master/Day00): Unix - basic commands, filesystem
