@@ -19,10 +19,10 @@ Piscine C: proposed solutions to exercises, projects, rushes and exams for the a
 
 ## Rushes (group projects)
 ##### [Rush00](https://github.com/VladCincean/Piscine-C/tree/piscine/rush00/ex00): Basic printing
-##### [Rush01](https://github.com/VladCincean/Piscine-C/tree/piscine/rush01/ex00): Backtracking; Sudoku
+##### [Rush01](http://lmgtfy.com/?q=sudoku+backtracking): Backtracking; Sudoku
 ##### [Rush02](https://github.com/VladCincean/Piscine-C/tree/piscine/rush02/ex00): Pattern recognition
 
 ## Projects
-##### [match-n-match](https://github.com/VladCincean/Piscine-C/tree/piscine/match-n-match/ex00): Wildcard pattern matching
-##### [evalexpr](https://github.com/VladCincean/Piscine-C/tree/piscine/evalexpr/ex00): Arithmetic expression evaluation
-##### [bsq](https://github.com/VladCincean/Piscine-C/tree/piscine/bsq): Dynamic programming; Maximum size square sub-matrix
+##### [match-n-match](http://lmgtfy.com/?q=wildcard+character+matching): Wildcard pattern matching
+##### [evalexpr](http://lmgtfy.com/?q=evaluarea+unei+expresii): Arithmetic expression evaluation
+##### [bsq](http://lmgtfy.com/?q=maximum+size+square+sub-matrix): Dynamic programming; Maximum size square sub-matrix
