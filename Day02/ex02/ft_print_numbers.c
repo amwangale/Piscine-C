@@ -16,8 +16,8 @@ void	ft_print_numbers(void)
 {
 	char	n;
 
-	n = '0';
-	while (n <= '9')
+	n = 0;
+	while (n < 10)
 	{
 		ft_putchar(n);
 		n = n + 1;

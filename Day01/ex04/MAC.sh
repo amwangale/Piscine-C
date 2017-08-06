@@ -1,2 +1,2 @@
 #!/bin/sh
-ifconfig | grep "ether" | grep -o "\<..:..:..:..:..:..\>"
+ifconfig | grep "..:..:..:..:..:.."

@@ -15,8 +15,6 @@ char	*ft_strstr(char *str, char *to_find)
 	char *begin;
 	char *pattern;
 
-	if (*to_find == '\0')
-		return (str);
 	while (*str != '\0')
 	{
 		begin = str;

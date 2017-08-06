@@ -21,6 +21,6 @@
 # define ODD_MSG "I have an impair number of arguments.\n"
 # define SUCCESS 0
 
-typedef int	t_bool;
+typedef unsigned int	t_bool;
 
 #endif

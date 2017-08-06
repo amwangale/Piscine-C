@@ -19,9 +19,9 @@
 
 void	put_error(char *filename)
 {
-	write_error("ft_tail: ");
-	write_error(filename);
-	write_error(": No such file or directory\n");
+	ft_putstr("ft_tail: ");
+	ft_putstr(filename);
+	ft_putstr(": No such file or directory");
 }
 
 int		ft_tail(char *filename, int n)
@@ -59,9 +59,9 @@ int		ft_tail_multiple(char *filename, int n)
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 	{
-		write_error("ft_tail: ");
-		write_error(filename);
-		write_error(": No such file or directory\n");
+		ft_putstr("ft_tail: ");
+		ft_putstr(filename);
+		ft_putstr(": No such file or directory");
 		return (-1);
 	}
 	close(fd);

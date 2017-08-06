@@ -30,7 +30,6 @@ char	*ft_strrev(char *str)
 	end = str;
 	while (*end != '\0')
 		end++;
-	end--;
 	while (beg < end)
 	{
 		ft_swap(beg, end);

@@ -18,8 +18,8 @@ int	*ft_map(int *tab, int length, int (*f)(int))
 	int	i;
 
 	ret = (int*)malloc(sizeof(int) * length);
-	i = 0;
-	while (i < length)
+	i = 1;
+	while (i <= length)
 	{
 		ret[i] = f(tab[i]);
 		i++;

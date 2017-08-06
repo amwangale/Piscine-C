@@ -12,9 +12,7 @@
 
 int	ft_char_is_uppercase(char c)
 {
-	if ('A' <= c && c <= 'Z')
-		return (1);
-	return (0);
+	return ('A' <= c && c <= 'Z');
 }
 
 int	ft_str_is_uppercase(char *str)
@@ -22,8 +20,8 @@ int	ft_str_is_uppercase(char *str)
 	while (*str != '\0')
 	{
 		if (!ft_char_is_uppercase(*str))
-			return (0);
+			return (1);
 		str++;
 	}
-	return (1);
+	return (0);
 }

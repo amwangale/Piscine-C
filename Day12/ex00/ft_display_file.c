@@ -25,7 +25,7 @@ int	ft_display_file(char *filename)
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 	{
-		write_error("open() failed\n");
+		ft_putstr("open() failed\n");
 		return (-1);
 	}
 	while ((ret = read(fd, buf, BUF_SIZE)))
@@ -35,7 +35,7 @@ int	ft_display_file(char *filename)
 	}
 	if (close(fd) == -1)
 	{
-		write_error("close() failed\n");
+		ft_putstr("close() failed\n");
 		return (-1);
 	}
 	return (0);

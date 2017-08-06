@@ -76,13 +76,13 @@ char	**ft_split_whitespaces(char *str)
 
 	word = str;
 	word_count = ft_count_words(str);
-	ret = (char**)malloc(sizeof(char*) * (word_count + 1));
-	i = 0;
+	ret = (char**)malloc(sizeof(char*) * word_count);
+	i = 1;
 	while (i < word_count)
 	{
 		start = ft_get_next_word_start(word);
 		word = ft_get_next_word_end(start);
-		ret[i] = (char*)malloc(word - start + 1);
+		ret[i] = (char *)malloc(word - start);
 		ft_strncpy(ret[i], start, word - start);
 		i++;
 	}

@@ -12,11 +12,7 @@
 
 int	ft_char_is_alpha(char c)
 {
-	if ('a' <= c && c <= 'z')
-		return (1);
-	if ('A' <= c && c <= 'Z')
-		return (1);
-	return (0);
+	return ('a' <= c && c <= 'z');
 }
 
 int	ft_str_is_alpha(char *str)

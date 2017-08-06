@@ -20,7 +20,6 @@ void	ft_put_comb(char i, char j, char k)
 	if (i != '7' || j != '8' || k != '9')
 	{
 		ft_putchar(',');
-		ft_putchar(' ');
 	}
 }
 
@@ -31,18 +30,17 @@ void	ft_print_comb(void)
 	char	k;
 
 	i = '0';
-	while (i <= '7')
+	while (i < '8')
 	{
 		j = i + 1;
-		while (j <= '8')
+		while (j < '9')
 		{
 			k = j + 1;
-			while (k <= '9')
+			while (k < '9')
 			{
 				ft_put_comb(i, j, k);
 				k++;
 			}
-			j++;
 		}
 		i++;
 	}

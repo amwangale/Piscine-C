@@ -34,10 +34,9 @@ int		ft_my_length(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		l += ft_strlen(argv[i]) + 1;
+		l += ft_strlen(argv[i]);
 		i++;
 	}
-	l++;
 	return (l);
 }
 

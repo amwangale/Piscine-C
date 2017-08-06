@@ -55,7 +55,6 @@ void	ft_print_combn_backtrack(int *tab, int k, int n)
 				if (tab[0] <= 9 - n)
 				{
 					ft_putchar(',');
-					ft_putchar(' ');
 				}
 			}
 			else
@@ -66,7 +65,7 @@ void	ft_print_combn_backtrack(int *tab, int k, int n)
 
 void	ft_print_combn(int n)
 {
-	int	tab[10];
+	int	tab[17];
 
 	ft_print_combn_backtrack(tab, 0, n);
 }

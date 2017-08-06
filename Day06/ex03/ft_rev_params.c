@@ -28,8 +28,8 @@ int		main(int argc, char **argv)
 	i = argc - 1;
 	while (i > 0)
 	{
-		ft_putstr(argv[i]);
 		ft_putchar('\n');
+		ft_putstr(argv[i]);
 		i--;
 	}
 	return (0);

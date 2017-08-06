@@ -19,6 +19,5 @@ char	*ft_strcpy(char *dest, char *src)
 	src_iterator = 0;
 	while (src[src_iterator] != '\0')
 		dest[dest_iterator++] = src[src_iterator++];
-	dest[dest_iterator] = '\0';
 	return (dest);
 }

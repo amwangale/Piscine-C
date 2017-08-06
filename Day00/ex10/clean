@@ -1,1 +1,1 @@
-find . \( -type f -name "*~" -or -name "#*#" \) -exec basename {} + -exec rm {} +
+find . \( -type f -name "~" -or -name "#*#" \) -exec basename {} + -exec rm {} +

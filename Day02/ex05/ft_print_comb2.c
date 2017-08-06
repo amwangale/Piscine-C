@@ -40,7 +40,6 @@ void	ft_print_comb2(void)
 			if (i != 98 || j != 99)
 			{
 				ft_putchar(',');
-				ft_putchar(' ');
 			}
 			j = j + 1;
 		}

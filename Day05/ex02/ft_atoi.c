@@ -10,24 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_whitespace(char *str)
-{
-	if (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\r')
-		return (1);
-	return (0);
-}
-
 int	ft_atoi(char *str)
 {
 	int ret;
 	int sign;
 
-	while (*str != '\0' && ft_is_whitespace(str))
-		str++;
 	sign = 1;
-	if (*str == '+')
-		str++;
-	else if (*str == '-')
+	if (*str == '-')
 	{
 		sign = -1;
 		str++;

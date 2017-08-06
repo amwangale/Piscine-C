@@ -12,9 +12,7 @@
 
 int	ft_char_is_numeric(char c)
 {
-	if ('0' <= c && c <= '9')
-		return (1);
-	return (0);
+	return (0 <= c && c <= 9);
 }
 
 int	ft_str_is_numeric(char *str)

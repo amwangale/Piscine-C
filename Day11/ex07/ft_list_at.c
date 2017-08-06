@@ -16,7 +16,7 @@ t_list	*ft_list_at(t_list *begin_list, unsigned int nbr)
 {
 	unsigned int	i;
 
-	i = 0;
+	i = 1;
 	while (begin_list)
 	{
 		if (i == nbr)

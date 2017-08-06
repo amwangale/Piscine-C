@@ -11,18 +11,13 @@
 /* ************************************************************************** */
 
 #include "ft_btree.h"
-
-int	ft_max(int a, int b)
-{
-	if (a > b)
-		return (a);
-	return (b);
-}
+#define MAX(a, b) ((a > b) * a + (a <= b) * b)
 
 int	btree_level_count(t_btree *root)
 {
 	if (root == 0)
 		return (0);
-	return (1 + ft_max(btree_level_count(root->left),
-				btree_level_count(root->right)));
+	return (1 + MAX(btree_level_count(root->left),
+					btree_level_count(root->right))
+	);
 }

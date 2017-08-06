@@ -10,37 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_digit(char c)
-{
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
-}
-
-int	ft_is_whitespace(char *str)
-{
-	if (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\r')
-		return (1);
-	return (0);
-}
-
 int	ft_atoi(char *str)
 {
 	int	result;
 	int	sign;
 
-	while (*str != '\0' && ft_is_whitespace(str))
-		str++;
 	sign = 1;
-	if (*str == '+')
-		str++;
-	else if (*str == '-')
+	if (*str == '-')
 	{
 		sign = -1;
 		str++;
 	}
 	result = 0;
-	while (ft_is_digit(*str) && *str != '\0')
+	while (*str >= '0' && *str <= '9' && *str != '\0')
 	{
 		result *= 10;
 		result = result + *str - '0';

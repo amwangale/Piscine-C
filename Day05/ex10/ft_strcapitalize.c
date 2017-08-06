@@ -42,10 +42,7 @@ char	*ft_strcapitalize(char *str)
 		if (ft_is_alpha(str[i]))
 		{
 			if (ft_is_alpha_num(str[i - 1]))
-			{
-				if ('A' <= str[i] && str[i] <= 'Z')
-					str[i] = str[i] - 'A' + 'a';
-			}
+				str[i] = str[i] - 'A' + 'a';
 			else if ('a' <= str[i] && str[i] <= 'z')
 				str[i] = str[i] - 'a' + 'A';
 		}

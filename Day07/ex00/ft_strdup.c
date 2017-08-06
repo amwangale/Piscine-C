@@ -42,7 +42,7 @@ char	*ft_strdup(char *str)
 {
 	char	*ret;
 
-	ret = (char*)malloc(sizeof(char) * (ft_strlen(str) + 1));
+	ret = (char*)malloc(sizeof(char) * ft_strlen(str));
 	ret = ft_strcpy(ret, str);
 	return (ret);
 }

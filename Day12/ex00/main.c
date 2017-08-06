@@ -17,12 +17,12 @@ int	main(int argc, char **argv)
 {
 	if (argc == 1)
 	{
-		write_error("File name missing.\n");
+		ft_putstr("File name missing.\n");
 		return (1);
 	}
 	if (argc > 2)
 	{
-		write_error("Too many arguments.\n");
+		ft_putstr("Too many arguments.\n");
 		return (1);
 	}
 	if (ft_display_file(argv[1]) == -1)

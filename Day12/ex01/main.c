@@ -22,7 +22,7 @@ int	main(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		ft_display_file(argv[1]);
+		ft_display_file(argv[i]);
 		i++;
 	}
 	return (0);

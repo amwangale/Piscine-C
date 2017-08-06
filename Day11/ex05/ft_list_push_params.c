@@ -28,7 +28,7 @@ t_list	*ft_list_push_params(int ac, char **av)
 
 	if (ac == 1)
 		return (0);
-	i = 1;
+	i = 0;
 	list = 0;
 	while (i < ac)
 		ft_list_push_front(&list, av[i++]);
